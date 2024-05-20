@@ -3,13 +3,13 @@
 :root {
     --primary-color: #87CEEB;
     --secondary-color: #778899;
-    --accent1-color: #000080;
+    --accent1-color: #C69B7C;
     --accent2-color: #40E0D0;
 
     --heading-font: "Trade Winds", system-ui;
     --paragraph-font: "ABeeZee", san-serif;
 
-    --nav-background-color: #000080;
+    --nav-background-color: #C69B7C;
     --nav-link-color: #40E0D0;
     --nav-hover-link-color: #606C38;
     --nav-hover-background-color: #BC6C25;
