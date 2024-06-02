@@ -154,15 +154,14 @@ footer img {
     display: grid;
     grid-template-columns: 2fr 3fr;
     padding: 1rem 1.5rem;
-    align-content: center;
 }
 .contact-item {
     display: grid;
-    grid-template-columns: 1fr 5fr ;
+    grid-template-columns: 1fr 5fr;
     text-align: left;
     align-content: center;
     align-items: center;
-    padding: 1rem 3rem 3rem 3rem;
+    padding: 0 3rem 3rem 3rem;
 }
 .contact-item img{
     width: 30px;
@@ -176,9 +175,10 @@ footer img {
 }
 .contact-container h3 {
     font-weight: bold;
-    font-size: 20px;
+    font-size: 25px;
     color: #3f4739;
-    margin: 0;
+    margin-left: 70px;
+    text-align: left;
 }
 
 iframe {
@@ -274,4 +274,13 @@ button:hover {
     justify-content: center;
     align-items: center;
     padding-right: 2.5rem;
-} 
+}
+.wireframe{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.wireframe a{
+    color: white;
+    align-content: center;
+    padding-left: 50px;
+}
