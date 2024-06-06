@@ -13,11 +13,11 @@
     --nav-hover-link-color: #606C38;
     --nav-hover-background-color: #BC6C25;
 }
-h1, h2, h3, h4, h5, h6 {
+h1,h2, h3, h4, h5, h6, .table caption {
     font-family: var(--heading-font);
     color: #FFFB87;
 }
-body {
+body, .table {
     font-family: var(--paragraph-font);
     color: #471323;
     max-width: 100%;
@@ -45,7 +45,7 @@ nav {
 	list-style: none;
     justify-content: space-evenly;
 }
-.navigation a {
+.navigation a{
 	display: block;
 	color: #fffffc;
 	padding: 20px;
@@ -65,17 +65,30 @@ nav {
     width: 100%;
     height: auto;
 }
-.hero h1 {
+.hero h1, .hero a, .home-hero h1{
     font-size: 60px;
     font-weight:900;
     color: #fffffc;
     background-color: #471323;
     position: absolute;
     top: 10px;
-    width: 1231px;
+    width: 100%;
     text-align: center;
-    
 }
+.hero a {
+    font-family: var(--heading-font);
+    top: 615px;
+    width: 100%;
+    height: 140px;
+    text-decoration: none;
+    opacity: 0.85;
+    align-content: center;
+}
+.hero a:hover, .home-hero a:hover {
+    color: #455A36;
+    background-color: #FFFB87;
+}
+
 article {
     font-family: var(--paragraph-font);
     color: #FFFB87;
@@ -117,7 +130,10 @@ section h2 {
     justify-self: center;
     width: 100%;
     height: auto;
-    padding: 1rem;
+}
+.container h2 {
+    font-size: 20px;
+    height: 5px;
 }
 .trips-container {
     display: grid;
@@ -169,7 +185,7 @@ footer img {
     padding: 1rem;
 }
 .contact-container h1 {
-    color: #471323;
+    width: 80%;
     font-size: 45px;
     padding-bottom: 1rem;
 }
@@ -283,4 +299,136 @@ button:hover {
     color: white;
     align-content: center;
     padding-left: 50px;
+}
+section h1 {
+    background-color: #471323;
+    margin: 0;
+    font-size: 35px;
+    padding: 2rem;
+}
+.container-trips { 
+   display: grid;
+   grid-template-columns: 2fr 2fr 2fr;
+}
+.container-trips img{
+    height: auto;
+    width: 100%;
+
+}
+.trips {
+    display: grid;
+    grid-template-rows: 3fr 1fr 3fr 1fr ;
+}
+.trips h2, .trips a {
+    align-content: center;
+    text-decoration: none;
+    padding: 1rem;
+}
+.trips p {
+    text-align: justify;
+    padding: 2rem;
+}
+.trips a {
+   color: #471323;
+   margin-bottom: 1rem;
+}
+.trips a:hover{
+    background-color:#455A36;
+    color: #FFFB87;
+    font-weight: bold;
+}
+tbody {
+    font-size: 95%;
+    font-style: italic;
+  }
+tfoot {
+    font-weight: bold;
+}
+.home-body {
+    margin: 0;
+}
+.home-hero img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin: 0;
+}
+.home-hero h1 {
+    text-align: center;
+    top: 75px;
+    font-size: 80px;
+}
+.home-hero a {
+    font-family: var(--heading-font);
+    color: #FFFB87;
+    background-color: #3f4739;
+    text-decoration: none;
+    height: 180px;
+    width: 35%;
+    position: absolute;
+    border-radius: 20%;
+    font-size: 55px;
+    text-align: center;
+    align-content: center;
+    left: 40px;
+    top: 340px;
+    height: 350px;
+    opacity: 0.80;
+}
+.home-hero {
+    background-color: #471323;
+}
+.home-description {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.5fr 0.5fr;
+    border-bottom: 1px solid grey;
+}
+.home-description img {
+    width: 100%;
+    height: auto;
+}
+.home-description p{
+    color: #FFFB87;
+    background-color: #471323;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    padding: 3rem;
+    align-content: center;
+    margin: 0;
+}
+.newsletter-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: 2px solid green ;
+    margin: 1rem;
+    padding: 1rem;
+}
+.column1 {
+    font-size: 30px;
+    color: #455A36;
+    padding: 3rem;
+    opacity: 0.90;
+}
+.table {
+    border: 2px solid #455A36 ;
+    border-collapse: collapse;
+    margin: 0 auto;
+    width: 100%;
+    margin-bottom: 3rem;
+}
+th[scope="column"] {
+    color: #FFFB87;
+    background:#455A36;
+}
+td, th{
+    border: 3px solid #455A36;
+    padding: 1rem;
+    text-align: center;
+}
+.table caption {
+    padding: 2rem;
+    background: #471323;
+    font-size: 35px;
 }
